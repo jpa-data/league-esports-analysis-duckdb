@@ -10,15 +10,15 @@ This project analyses the following League of Legends Esports data:
 ![Region Winrates](./img/region_winrates.png)
 - South Korea (LCK) is the only region to have a positive win rate against every other region.
 - North American Teams have a staggering 80% win rate against European Teams since the beginning of 2025.
-
+---
 ![Winrates vs LCK](./img/vs_LCK_winrates.png)
 - G2 Esports has the highest win rate against Korean Teams this year at 58.82%.
 - No other team has a positive winrate, with most having very low winrates.
-
+---
 ![Unique Champion Picks](./img/unique_champion_picks.png)
 - Most lanes already have more unique Champions picked this year than in the entire last season.
 - Botlane has seen the largest increase at 35%.
-
+---
 ![Pick- & Banrates](./img/pickbanrate.png)
 - Orianna has been picked or banned in 75% of games in major leagues this year.
 
