@@ -1,11 +1,11 @@
-# OVERVIEW
+# Overview
 
 This project analyses the following League of Legends Esports data:
 1. Team and Region performance at official international events
 2. Basic Player Performance at international events
 3. Champion and Game Meta analysis
 
-# KEY INSIGHTS
+# Key Insights
 
 ![Region Winrates](./img/region_winrates.png)
 - South Korea (LCK) is the only region to have a positive win rate against every other region.
@@ -22,20 +22,20 @@ This project analyses the following League of Legends Esports data:
 ![Pick- & Banrates](./img/pickbanrate.png)
 - Orianna has been picked or banned in 75% of games in major leagues this year.
 
-# DATA PIPELINE
+# Workflow
 
 1. **Data Ingestion & Cleaning:** Filtered raw match records, normalized and corrected attribute values, created tables.
 2. **Export:** Generated parquet files for faster querying and easier shareability.
 3. **Analysis:** Executed SQL Queries to provide insights on the data.
 4. **Visualization:** Created Bar Charts for Key Insights through Plotly Express.
 
-# TECH STACK
+# Tech Stack
 
 * **Language:** Python
-* **Libraries:** Duck DB
+* **Libraries:** Duck DB, Plotly (Visualization), Polars (for handling results in Plotly)
 * **Environment:** Jupyter Notebooks
 
-# HOW TO REPRODUCE
+# How to Reproduce
 
 This repository includes two execution paths depending on your desired actions.
 
@@ -44,11 +44,12 @@ This repository includes two execution paths depending on your desired actions.
 These steps are necessary to reproduce the steps in Data Ingestion and Data Transformation notebooks.
 
 1. Download the raw .csv files for the 2025 and 2026 season at: and place them in the data/raw/ directory. These files are roughly 150mb combined and can be downloaded at https://oracleselixir.com/tools/downloads
+2. Install everything from requirements.txt
 2. Execute the Jupyter Notebook 01_data_preparation.ipynb from top to bottom
 
-## Analysis only
+## Analysis Only
 
-To execute the Data Analysis notebook, no extra steps are required. The repository contains the necessary player_data.parquet and team_data.parquet files.
+To execute the Data Analysis notebook, no extra steps are required. The repository contains the necessary player_data.parquet and team_data.parquet files. Everything in requirements.txt is still necessary.
 
 1. Open 02_Data_Analysis.ipynb and execute from top to bottom.
 
