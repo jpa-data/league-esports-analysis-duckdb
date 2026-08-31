@@ -1,2 +1,5 @@
-duckdb>=1.5.5
-jupysql>=0.11.1
+duckdb==1.5.5
+duckdb=engine=0.17.0
+jupsysql==0.11.1
+polars==1.43.2
+plotly==7.00
